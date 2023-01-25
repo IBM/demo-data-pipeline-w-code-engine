@@ -1,2 +1,14 @@
 # demo-data-pipeline-w-code-engine
-This data pipeline demo repo has sample codes and commands to automatically process data files written to COS buckets and push data records to event stream with serverless code engine jobs. It also has sample consumer to consume the data records from event stream and further process the data before saving them back to COS bucket.
+This demo shows how data files written to COS buckets can be automatically processed through the data pipeline using services in IBM Cloud. The following steps are involved in the data pipeline:
+
+* Data file is uploaded to COS bucket.
+* Code engine job is triggered by COS write event (IBM Cloud container registry holds the image for the job).
+* Code engine job reads data file from COS bucket, and push data records to Kafka topic (producer). Note that this step is optional in batch data pipeline, and code engine jobs can process the data and make it ready for consumption. It is included here to demonstrate how to push data records to Kafka, since some 3rd party software/services has connector to Kafka already.
+* Data handler (consumer) consumes data records from Kafka topic, process the data if needed, and save the result back to COS bucket
+* Various applications can make use of the data
+
+Refer to this [architecture diagram](https://github.com/IBM/demo-data-pipeline-w-code-engine/blob/main/chart/data-pipeline.jpeg).
+
+For more detailed description, please refer to the [blog post](link to blog post).
+
+For quick command reference, please refer to the [sample commands](https://github.com/IBM/demo-data-pipeline-w-code-engine/blob/main/bin/command_reference.sh) in this project.

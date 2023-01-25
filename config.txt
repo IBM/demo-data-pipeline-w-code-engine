@@ -1,0 +1,14 @@
+USE_ENV=true
+COS_PREFIX=COS
+KAFKA_PREFIX=KAFKA
+FILE_WHITE_PATTERN=test_data
+FILE_MAX_ROW=10
+DATADUMP_INTERVAL=60000
+
+COS_ENDPOINT_URL=https://s3.us-east.cloud-object-storage.appdomain.cloud
+COS_LOCATION=us-east
+COS_BUCKET=fsdemo-input
+COS_OBJECT_KEY=test_data_customer_history.csv
+
+KAFKA_NAME=fsdemo-data-pipeline
+KAFKA_TOPIC=fsdemo-data-pipeline
