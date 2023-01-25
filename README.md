@@ -7,8 +7,8 @@ This demo shows how data files written to COS buckets can be automatically proce
 * Data handler (consumer) consumes data records from Kafka topic, process the data if needed, and save the result back to COS bucket
 * Various applications can make use of the data
 
-Refer to this [architecture diagram](chart/data-pipeline.jpeg).
+Refer to this [architecture diagram](chart/data-pipeline.jpg).
 
 For more detailed description, please refer to the [blog post](link).
 
-For quick command reference, please refer to the [sample commands](bin/command_reference.sh) in this project.
+For quick command reference, please refer to the [sample commands](bin/reference_commands.sh) in this project.
