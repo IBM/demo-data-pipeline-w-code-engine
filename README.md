@@ -9,6 +9,6 @@ This demo shows how data files written to COS buckets can be automatically proce
 
 Refer to this [architecture diagram](chart/data-pipeline.jpg).
 
-For more detailed description, please refer to the [blog post](link).
+For more detailed description, please refer to the [blog post](https://developer.ibm.com/articles/running-hybrid-cloud-data-pipeline-demo/).
 
 For quick command reference, please refer to the [sample commands](bin/reference_commands.sh) in this project.
